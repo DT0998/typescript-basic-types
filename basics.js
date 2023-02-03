@@ -1,8 +1,8 @@
-var button = document.querySelector("button");
-var input1 = document.getElementById("num1");
-var input2 = document.getElementById("num2");
+const button = document.querySelector("button");
+const input1 = document.getElementById("num1");
+const input2 = document.getElementById("num2");
 function add(num1, num2, showResult, phrase) {
-    var result = num1 + num2;
+    const result = num1 + num2;
     if (showResult) {
         console.log(phrase + result);
     }
@@ -10,9 +10,9 @@ function add(num1, num2, showResult, phrase) {
         return num1 + num2;
     }
 }
-var number1;
+let number1;
 number1 = 5;
-var number2 = 2.8;
-var printResult = true;
-var resultPhrase = "Result is: ";
+const number2 = 2.8;
+const printResult = true;
+let resultPhrase = "Result is: ";
 add(number1, number2, printResult, resultPhrase);
